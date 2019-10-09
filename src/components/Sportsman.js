@@ -2,7 +2,6 @@ import React from 'react';
 
 export default ({ name, level }) => (
   <div>
-    <p>{name}</p>
-    <p>{level}</p>
+    <span>{name} - {level}</span>
   </div>
 );
