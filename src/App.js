@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/team-generator.css';
 import sportsmen from './data/sportsmen';
 import SportsmenList from './components/SportsmenList';
 import { generateTeams } from './utils/generate-teams';
@@ -9,17 +9,17 @@ class App extends Component {
     super(props);
     this.state = {
       teams: {
-        team1: [],
-        team2: [],
+        team1: null,
+        team2: null,
       }
     };
   };
 
   render() {
     return (
-      <div className="App">
+      <div>
         <h1>Team Generator</h1>
-        <div>
+        <div className="column">
           <SportsmenList sportsmen={sportsmen}/>
           <button onClick={() => {
             this.setState({ teams: generateTeams(sportsmen) });
@@ -27,9 +27,9 @@ class App extends Component {
             Generate teams
           </button>
         </div>
-        <div>
-          <SportsmenList sportsmen={this.state.teams.team1}/>
-          <SportsmenList sportsmen={this.state.teams.team2}/>
+        <div className="column">
+          {this.state.teams.team1 && <SportsmenList sportsmen={this.state.teams.team1}/>}
+          {this.state.teams.team2 && <SportsmenList sportsmen={this.state.teams.team2}/>}
         </div>
       </div>
     );

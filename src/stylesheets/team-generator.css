@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.column {
+    display: inline-block;
+    width: 50%;
+}
+
+.team {
+    border: 1px solid;
+}
