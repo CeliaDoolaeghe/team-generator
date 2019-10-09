@@ -1,3 +1,8 @@
+/**
+ * Generate two teams from a list of players
+ * @param players list of players
+ * @returns two teams of players
+ */
 export const generateTeams = (players) => {
   const team1 = [];
   const team2 = [];
