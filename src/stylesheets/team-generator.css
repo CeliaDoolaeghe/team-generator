@@ -4,9 +4,12 @@ h1 {
 
 .column {
     display: inline-block;
-    width: 50%;
+    width: 45%;
+    padding: 10px;
 }
 
 .team {
     border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
 }

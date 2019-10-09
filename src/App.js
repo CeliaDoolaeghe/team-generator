@@ -21,15 +21,17 @@ class App extends Component {
         <h1>Team Generator</h1>
         <div className="column">
           <SportsmenList sportsmen={sportsmen}/>
+        </div>
+        <div className="column">
+          {this.state.teams.team1 && <SportsmenList sportsmen={this.state.teams.team1}/>}
+          {this.state.teams.team2 && <SportsmenList sportsmen={this.state.teams.team2}/>}
+        </div>
+        <div>
           <button onClick={() => {
             this.setState({ teams: generateTeams(sportsmen) });
           }}>
             Generate teams
           </button>
-        </div>
-        <div className="column">
-          {this.state.teams.team1 && <SportsmenList sportsmen={this.state.teams.team1}/>}
-          {this.state.teams.team2 && <SportsmenList sportsmen={this.state.teams.team2}/>}
         </div>
       </div>
     );
