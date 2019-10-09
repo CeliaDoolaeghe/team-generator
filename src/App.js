@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <Fragment>
-      <h1>Team Generator</h1>
+      <h1>Teams Generator</h1>
       <div className="column">
         <PlayersList players={players}/>
       </div>
