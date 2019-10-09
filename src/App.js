@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './stylesheets/team-generator.css';
-import sportsmen from './data/sportsmen';
-import SportsmenList from './components/SportsmenList';
+import sportsmen from './data/players';
+import SportsmenList from './components/PlayersList';
 import { generateTeams } from './utils/generate-teams';
 
 class App extends Component {

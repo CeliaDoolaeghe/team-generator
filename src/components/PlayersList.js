@@ -1,5 +1,5 @@
 import React from 'react';
-import Sportsman from './Sportsman';
+import Sportsman from './Player';
 
 export default ({ sportsmen }) => {
   return (
