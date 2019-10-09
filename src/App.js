@@ -4,14 +4,16 @@ import sportsmen from './data/players';
 import SportsmenList from './components/PlayersList';
 import { generateTeams } from './utils/generate-teams';
 
+const EMPTY_TEAMS = {
+  team1: null,
+  team2: null,
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      teams: {
-        team1: null,
-        team2: null,
-      }
+      teams: EMPTY_TEAMS,
     };
   };
 
@@ -27,9 +29,10 @@ class App extends Component {
           {this.state.teams.team2 && <SportsmenList sportsmen={this.state.teams.team2}/>}
         </div>
         <div>
-          <button onClick={() => {
-            this.setState({ teams: generateTeams(sportsmen) });
-          }}>
+          <button onClick={() => this.setState({ teams: EMPTY_TEAMS })}>
+            Clear
+          </button>
+          <button onClick={() => this.setState({ teams: generateTeams(sportsmen) })}>
             Generate teams
           </button>
         </div>
