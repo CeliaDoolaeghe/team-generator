@@ -13,6 +13,10 @@ h1 {
     padding: 10px;
 }
 
-button {
-    margin: 10px;
+.buttons {
+    text-align: right;
+}
+
+.clear {
+    margin-right: 5px;
 }
