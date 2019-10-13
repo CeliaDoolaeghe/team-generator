@@ -15,28 +15,30 @@ const EMPTY_TEAMS = {
 const App = () => {
   const [teams, setTeams] = useState(EMPTY_TEAMS);
   const [number, setNumber] = useState(1);
-  const [level, setLevel] = useState(undefined);
+  const [level, setLevel] = useState('beginner');
 
   return (
     <Fragment>
       <h1>Teams Generator</h1>
-      <div className='column'>
-        <PlayersList players={players}/>
-      </div>
-      <div className='column'>
-        {teams.team1 && <PlayersList players={teams.team1}/>}
-        {teams.team2 && <PlayersList players={teams.team2}/>}
-      </div>
-      <div>
-        <div>
-          <NumberInput
-            value={number}
-            onChange={value => setNumber(value)}
-            isValid={checkNumber(number)}
-          />
+      <div className='teams'>
+        <div className='column all-players'>
+          <PlayersList title='All players' players={players}/>
+        </div>
+        <div className='column'>
+          <PlayersList title='Team 1' players={teams.team1}/>
+          <PlayersList title='Team 2' players={teams.team2}/>
         </div>
         <div>
-          <LevelSelect onChange={value => setLevel(value)}/>
+          <div>
+            <NumberInput
+              value={number}
+              onChange={value => setNumber(value)}
+              isValid={checkNumber(number)}
+            />
+          </div>
+          <div>
+            <LevelSelect onChange={value => setLevel(value)}/>
+          </div>
         </div>
       </div>
       <div className='column buttons'>

@@ -1,16 +1,29 @@
 h1 {
     text-align: center;
+    background-color: #0082c3;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
-    display: inline-block;
     width: 45%;
-    padding: 10px;
 }
 
 .team {
     border: 1px solid;
     padding: 10px;
+    margin: 10px;
+    height: 100px;
+}
+
+.all-players .team {
+    height: 293px;
 }
 
 .buttons {
@@ -41,5 +54,5 @@ h1 {
 }
 
 .player-name {
-    margin-top: 0;
+    margin: 0;
 }
