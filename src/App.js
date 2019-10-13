@@ -14,8 +14,8 @@ const EMPTY_TEAMS = {
 
 const App = () => {
   const [teams, setTeams] = useState(EMPTY_TEAMS);
-  const [number, setNumber] = useState(1);
-  const [level, setLevel] = useState('beginner');
+  const [number, setNumber] = useState(4);
+  const [level, setLevel] = useState('balanced');
 
   return (
     <Fragment>
@@ -37,7 +37,10 @@ const App = () => {
             />
           </div>
           <div>
-            <LevelSelect onChange={value => setLevel(value)}/>
+            <LevelSelect
+              value={level}
+              onChange={value => setLevel(value)}
+            />
           </div>
         </div>
       </div>
