@@ -25,3 +25,21 @@ h1 {
     color: red;
     margin-left: 5px;
 }
+
+.icon-beginner {
+    filter: invert(73%) sepia(54%) saturate(303%) hue-rotate(152deg) brightness(89%) contrast(93%);
+}
+
+.icon-expert {
+    filter: invert(20%) sepia(74%) saturate(6262%) hue-rotate(2deg) brightness(89%) contrast(139%);
+}
+
+.player {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.player-name {
+    margin-top: 0;
+}
