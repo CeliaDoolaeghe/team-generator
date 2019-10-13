@@ -1,26 +1,34 @@
 [
   {
-    "name": "Célia Doolaeghe",
+    "name": "Célia",
     "level": "beginner"
   },
   {
-    "name": "Lionel Spanneut",
+    "name": "Lionel",
     "level": "expert"
   },
   {
-    "name": "Nourchene Ben Ali",
+    "name": "Nourchene",
     "level": "expert"
   },
   {
-    "name": "Patrice Jackel",
+    "name": "Patrice",
     "level": "beginner"
   },
   {
-    "name": "Claire Wolf",
+    "name": "Claire",
     "level": "expert"
   },
   {
-    "name": "Ikram Bakkali",
+    "name": "Ikram",
     "level": "beginner"
+  },
+  {
+    "name": "Renny",
+    "level": "beginner"
+  },
+  {
+    "name": "Réda",
+    "level": "expert"
   }
 ]
