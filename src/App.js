@@ -14,7 +14,7 @@ const EMPTY_TEAMS = {
 
 const App = () => {
   const [teams, setTeams] = useState(EMPTY_TEAMS);
-  const [number, setNumber] = useState(4);
+  const [number, setNumber] = useState(1);
   const [level, setLevel] = useState('balanced');
 
   return (

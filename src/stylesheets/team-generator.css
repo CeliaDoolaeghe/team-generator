@@ -19,11 +19,11 @@ h1 {
     border: 1px solid;
     padding: 10px;
     margin: 10px;
-    height: 100px;
+    height: 115px;
 }
 
 .all-players .team {
-    height: 293px;
+    height: 325px;
 }
 
 .buttons {
@@ -51,6 +51,7 @@ h1 {
     display: inline-block;
     text-align: center;
     margin: 5px;
+    width: 65px;
 }
 
 .player-name {
