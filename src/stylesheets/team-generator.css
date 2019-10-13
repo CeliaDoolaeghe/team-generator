@@ -20,3 +20,8 @@ h1 {
 .clear {
     margin-right: 5px;
 }
+
+.error {
+    color: red;
+    margin-left: 5px;
+}

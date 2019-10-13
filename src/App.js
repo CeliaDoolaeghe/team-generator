@@ -4,6 +4,7 @@ import { generateTeams } from './utils/generate-teams';
 import './stylesheets/team-generator.css';
 import players from './data/players';
 import NumberInput from './components/NumberInput';
+import { checkNumber } from './utils/checks';
 
 const EMPTY_TEAMS = {
   team1: null,
@@ -25,13 +26,19 @@ const App = () => {
         {teams.team2 && <PlayersList players={teams.team2}/>}
       </div>
       <div>
-        <NumberInput onChange={value => setNumber(value)}/>
+        <NumberInput
+          onChange={value => setNumber(value)}
+          isValid={checkNumber(number)}
+        />
       </div>
       <div className="column buttons">
         <button className="clear" onClick={() => setTeams(EMPTY_TEAMS)}>
           Clear
         </button>
-        <button onClick={() => setTeams(generateTeams(players, number))}>
+        <button
+          onClick={() => setTeams(generateTeams(players, number))}
+          disabled={!checkNumber(number)}
+        >
           Generate teams
         </button>
       </div>
