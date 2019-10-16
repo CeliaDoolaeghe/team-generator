@@ -21,34 +21,35 @@ const App = () => {
     <Fragment>
       <h1>Teams Generator</h1>
       <div className='teams'>
-        <div className='column all-players'>
+        <section className='column all-players'>
           <PlayersList title='All players' players={players}/>
-        </div>
-        <div className='column'>
+        </section>
+        <section className='column'>
           <PlayersList title='Team 1' players={teams.team1}/>
           <PlayersList title='Team 2' players={teams.team2}/>
-        </div>
-        <div>
-          <div>
+        </section>
+        <section>
+          <div className='line-form'>
             <NumberInput
               value={number}
               onChange={value => setNumber(value)}
               isValid={checkNumber(number)}
             />
           </div>
-          <div>
+          <div className='line-form'>
             <LevelSelect
               value={level}
               onChange={value => setLevel(value)}
             />
           </div>
-        </div>
+        </section>
       </div>
       <div className='column buttons'>
         <button className='clear' onClick={() => setTeams(EMPTY_TEAMS)}>
           Clear
         </button>
         <button
+          className='generate'
           onClick={() => setTeams(generateTeams(players, number, level))}
           disabled={!checkNumber(number)}
         >
