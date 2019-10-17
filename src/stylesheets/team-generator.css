@@ -79,6 +79,12 @@ h1 {
     color: #0082c3;
     outline: 1px solid #0082c3;
 }
+.generate:disabled {
+    background: #afafaf;
+    color: #fff;
+    outline: none;
+    cursor: not-allowed;
+}
 
 .error {
     color: red;

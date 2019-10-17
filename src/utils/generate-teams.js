@@ -1,5 +1,3 @@
-const pickRandomly = () => (Math.random() > 0.5) ? 1 : 0;
-
 export const generateTeams = (players) => {
   const team1 = [];
   const team2 = [];
