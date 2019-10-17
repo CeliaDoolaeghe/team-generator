@@ -103,3 +103,7 @@ h1 {
 .player-name {
     margin: 0;
 }
+
+.select {
+    background-color: white;
+}
