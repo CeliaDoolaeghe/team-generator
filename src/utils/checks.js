@@ -1,1 +1,1 @@
-export const checkNumber = number => number >= 1 && number <= 10;
+export const checkNumber = number => true;
